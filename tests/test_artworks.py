@@ -246,6 +246,3 @@ def test_filter_by_artist(client, seeded_db, artist, expected_titles):
     actual_titles = [artwork["title"] for artwork in response.json()]
 
     assert actual_titles == expected_titles
-
-#Part 7
-
